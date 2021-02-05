@@ -46,10 +46,12 @@
         <p class="features-causes">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="features-list">
           <li class="feature-item">
-            <h3>Настоящий городок</h3>
-            <span>-№1-</span>
-            <p>Седона-не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/feature_city.jpg" width="800" height="256" alt="Дома в Седоне">
+            <div class="feature-item-white-container">
+              <h3>Настоящий городок</h3>
+              <span>-№1-</span>
+              <p>Седона-не аттракцион для туристов, там течёт своя жизнь</p>
+              <img src="img/feature_city.jpg" width="800" height="256" alt="Дома в Седоне">
+            </div>
           </li>
           <li>
             <h3 class="visually-hidden">Услуги</h3>
@@ -69,25 +71,33 @@
             </ul>
           </li>
           <li class="feature-item">
-            <h3>Там есть мост дьявола</h3>
-            <span>-№2-</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="img/feature_bridge.jpg" width="800" height="256" alt="Мост дьявола">
+            <div class="feature-item-white-container">
+              <h3>Там есть мост дьявола</h3>
+              <span>-№2-</span>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <img src="img/feature_bridge.jpg" width="800" height="256" alt="Мост дьявола">
+            </div>
           </li>
           <li class="feature-item">
-            <h3>Небольшая площадь</h3>
-            <span>-№3-</span>
-            <p>Все достопримечательности находятся очень близко</p>
+            <div class="feature-item-container">
+              <h3>Небольшая площадь</h3>
+              <span>-№3-</span>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
           </li>
           <li class="feature-item">
-            <h3>Красивая дорога</h3>
-            <span>-№4-</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div class="feature-item-container">
+              <h3>Красивая дорога</h3>
+              <span>-№4-</span>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </li>
           <li class="feature-item">
-            <h3>Мало туристов</h3>
-            <span>-№5-</span>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+            <div class="feature-item-container">
+              <h3>Мало туристов</h3>
+              <span>-№5-</span>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -97,7 +107,7 @@
         <span>Заинтересовались?</span>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <form class="hotel-search-form" method="get" action="https://echo.htmlacademy.ru/">
-          <button class="hotel-finder-button" type="button"><p>Поиск гостиницы в Седоне</p></button>
+          <button class="hotel-finder-button" type="button">Поиск гостиницы в Седоне</button>
           <p class="hotel-search-form-item">
             <label for="arrival-date">Дата заезда:</label>
             <input id="arrival-date" type="text" name="date-of-arrival" placeholder="24 апреля 2017">
@@ -118,7 +128,7 @@
             <input id="children-number" type="number" name="number-of-children" placeholder="0">
             <button type="button">+</button>
           </p>
-          <button class="hotel-search-button" type="button"><p>Найти</p></button>
+          <button class="hotel-search-button" type="button">Найти</button>
         </form>
       </section>
 
