@@ -64,9 +64,9 @@
   background-color: var(--white);
 }
 
-
 a {
   text-decoration: none;
+  display: block;
 }
 
 img {
@@ -79,6 +79,7 @@ img {
 .services-list,
 .footer-social {
   list-style: none;
+  padding: 0px;
 }
 
 /*Main navigation*/
@@ -87,6 +88,15 @@ img {
   line-height: 26px;
   font-weight: 700;
 }
+
+/*
+.site-navigation-current a:not([href]) {
+  color: var(--brown);
+}
+
+не работает!
+
+*/
 
 .site-navigation a {
   color: var(--black);
@@ -97,11 +107,7 @@ img {
 }
 
 .site-navigation a:active {
-  color: rgba(var(--shadow), 0,3);
-}
-
-.site-navigation-current a:not([href]) {
-  color: var(--brown);
+  color: rgba(var(--shadow), 0.3);
 }
 
 /*Main*/
@@ -123,36 +129,31 @@ img {
   line-height: 26px;
 }
 
-.features-list,
-.services-list {
-  padding: 0px;
-}
-
 .feature-item span {
   display: block;
 }
 
-.feature-item-white-container {
+.feature-item-white {
   background-color: var(--blue);
   color: var(--white);
 }
 
-.feature-item-white-container h3 {
+.feature-item-white-caption {
   font-size: 21px;
   font-weight: 700;
 }
 
-.service-item h4 {
+.service-item-caption {
   font-size: 21px;
   font-weight: 700;
   color: var(--black);
 }
 
-.feature-item-container {
+.feature-item {
   background-color: var(--grey);
 }
 
-.feature-item-container h3 {
+.feature-item-caption {
   font-size: 21px;
   font-weight: 700;
   color: var(--black);
@@ -272,10 +273,6 @@ img {
 
 /*Footer social*/
 
-.footer-social {
-  padding: 0px;
-}
-
 .social-button {
   background-color: var(--blue);
 }
@@ -303,4 +300,183 @@ img {
 
 .footer-copyright-link:active {
   color: var(--neutral-white);
+}
+
+/*Catalog*/
+
+.hotel-filter {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.infrastucture-filter,
+.hotel-type-filter,
+.prise-filter {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+.infrastucture-filter legend,
+.hotel-type-filter legend,
+.prise-filter legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.infrastucture-filter-list,
+.hotel-type-filter-list,
+.prise-filter-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.infrastucture-filter-list label,
+.hotel-type-filter-list label,
+.prise-filter-list label {
+  display: block;
+}
+
+.prise-filter-item input {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  outline: none;
+  color: var(--white);
+}
+
+.show-hotels-button {
+  padding: 0px;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  outline: none;
+  color: var(--white);
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.show-hotels-button:hover {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.hotel-filter-found {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.hotel-filter-sorting {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--black);
+}
+
+.hotel-filter-sorting-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.hotel-filter-sorting-item a {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(var(--shadow), 0.3);
+  text-decoration: underline dotted;
+}
+
+.hotel-filter-sorting-item a:hover {
+  color: var(--blue);
+}
+
+.hotel-filter-sorting-item a:active {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.hotel-filter-sorting-item-current a,
+.hotel-filter-sorting-item-current a:hover,
+.hotel-filter-sorting-item-current a:focus,
+.hotel-filter-sorting-item-current a:active {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.hotel-filter-sorting-buttons {
+  list-style: none;
+  padding: 0px;
+}
+
+.hotel-filter-sorting-button-item a {
+  color: var(--light-grey);
+}
+
+.hotel-filter-sorting-button-item a:hover {
+  color: var(--black);
+}
+
+.hotel-filter-sorting-button-item a:active {
+  color: var(--blue);
+}
+
+.hotel-filter-sorting-button-item-current a,
+.hotel-filter-sorting-button-item-current a:hover,
+.hotel-filter-sorting-button-item-current a:focus,
+.hotel-filter-sorting-button-item-current a:active {
+  color: var(--blue);
+}
+
+.hotel-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.hotel-list-item-caption {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.hotel-list-item-caption:hover {
+  color: var(--blue);
+}
+
+.hotel-list-item-caption:active {
+  color: rgba(var(--shadow), 0.3);
+}
+
+.button-details {
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.button-details:hover {
+  background-color: var(--medium-blue);
+}
+
+.button-details:active {
+  background-color: var(--dark-blue);
+  color: rgba(var(--shadow-white), 0.3);
+}
+
+.button-reservation {
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.button-reservation:hover {
+  background-color: var(--medium-brown);
+}
+
+.button-reservation:active {
+  background-color: var(--dark-brown);
+  color: rgba(var(--shadow-white), 0.3);
+}
+
+.hotel-rating {
+  color: var(--dark-grey);
+  background-color: var(--medium-grey);
 }
