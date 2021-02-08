@@ -16,7 +16,7 @@
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
@@ -37,50 +37,50 @@
 
         <form class="hotel-filter" method="get" action="https://echo.htmlacademy.ru/">
 
-          <fieldset class="infrastucture-filter">
+          <fieldset>
             <legend>Инфраструктура:</legend>
-            <ul class="infrastucture-filter-list">
-              <li class="infrastucture-filter-item">
+            <ul>
+              <li>
                 <input type="checkbox" name="pool" id="filter-pool" checked>
                 <label for="filter-pool">Бассейн</label>
               </li>
-              <li class="infrastucture-filter-item">
+              <li>
                 <input type="checkbox" name="parking" id="filter-parking">
                 <label for="filter-parking">Парковка</label>
               </li>
-              <li class="infrastucture-filter-item">
+              <li>
                 <input type="checkbox" name="wi-fi" id="filter-wi-fi">
                 <label for="filter-wi-fi">Wi-fi</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="hotel-type-filter">
+          <fieldset>
             <legend>Тип жилья:</legend>
-            <ul class="hotel-type-filter-list">
-              <li class="hotel-type-filter-item">
+            <ul>
+              <li>
                 <input type="checkbox" name="hotel" id="filter-hotel" checked>
                 <label for="filter-hotel">Гостиница</label>
               </li>
-              <li class="hotel-type-filter-item">
+              <li>
                 <input type="checkbox" name="motel" id="filter-motel" checked>
                 <label for="filter-motel">Мотель</label>
               </li>
-              <li class="hotel-type-filter-item">
+              <li>
                 <input type="checkbox" name="apartments" id="filter-apartments" checked>
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="prise-filter">
+          <fieldset>
             <legend>Стоимость в сутки (р):</legend>
-            <ul class="prise-filter-list">
-              <li class="prise-filter-item">
+            <ul>
+              <li>
                 <input type="number" name="min-prise" id="filter-min-prise" value="0">
                 <label for="filter-min-prise">От</label>
               </li>
-              <li class="prise-filter-item">
+              <li>
                 <input type="number" name="max-prise" id="filter-max-prise" value="3000">
                 <label for="filter-max-prise">До</label>
               </li>
@@ -94,16 +94,16 @@
       </section>
 
       <section>
-        <p class="hotel-filter-found">Найдено: 3</p>
-        <p class="hotel-filter-sorting">Сортировка:</p>
-        <ul class="hotel-filter-sorting-list">
-          <li class="hotel-filter-sorting-item hotel-filter-sorting-item-current"><a href="blank.html">По цене</a></li>
-          <li class="hotel-filter-sorting-item"><a href="blank.html">По типу</a></li>
-          <li class="hotel-filter-sorting-item"><a href="blank.html">По рейтингу</a></li>
+        <p class="hotel-found">Найдено: 3</p>
+        <p class="hotel-sorting">Сортировка:</p>
+        <ul class="sorting-list">
+          <li class="sorting-current"><a href="blank.html">По цене</a></li>
+          <li><a href="blank.html">По типу</a></li>
+          <li><a href="blank.html">По рейтингу</a></li>
         </ul>
-        <ul class="hotel-filter-sorting-buttons">
-          <li class="hotel-filter-sorting-button-item"><a href="blank.html">По возрастанию</a></li>
-          <li class="hotel-filter-sorting-button-item hotel-filter-sorting-button-item-current"><a href="blank.html">По убыванию</a></li>
+        <ul class="sorting-buttons">
+          <li><a href="blank.html">По возрастанию</a></li>
+          <li class="sorting-button-current"><a href="blank.html">По убыванию</a></li>
         </ul>
       </section>
 
@@ -112,7 +112,7 @@
         <ul class="hotel-list">
           <li class="hotel-list-item">
             <a href="blank.html">
-              <h3 class="hotel-list-item-caption">Amara resort & spa</h3>
+              <h3 class="hotel-name">Amara resort & spa</h3>
             </a>
             <a href="blank.html">
               <img src="img/hotels/amara_resort.jpg" width="135" height="90" alt="Amara resort & spa">
@@ -124,7 +124,7 @@
           </li>
           <li class="hotel-list-item">
             <a href="blank.html">
-              <h3 class="hotel-list-item-caption">Desert quail inn</h3>
+              <h3 class="hotel-name">Desert quail inn</h3>
             </a>
             <a href="blank.html">
               <img src="img/hotels/desert_quail_inn.jpg" width="135" height="90" alt="Desert quail inn">
@@ -136,7 +136,7 @@
           </li>
           <li class="hotel-list-item">
             <a href="blank.html">
-              <h3 class="hotel-list-item-caption">Villas at poco diablo</h3>
+              <h3 class="hotel-name">Villas at poco diablo</h3>
             </a>
             <a href="blank.html">
               <img src="img/hotels/villas_at_poco_diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
