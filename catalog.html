@@ -23,7 +23,7 @@
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
+          <li class="site-navigation-current"><a>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -37,51 +37,51 @@
 
         <form class="hotel-filter" method="get" action="https://echo.htmlacademy.ru/">
 
-          <fieldset>
-            <legend>Инфраструктура:</legend>
-            <ul>
+          <fieldset class="hotel-filter-checkbox">
+            <legend class="filter-legend">Инфраструктура:</legend>
+            <ul class="filter-checkbox">
               <li>
-                <input type="checkbox" name="pool" id="filter-pool" checked>
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" checked>
                 <label for="filter-pool">Бассейн</label>
               </li>
               <li>
-                <input type="checkbox" name="parking" id="filter-parking">
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
                 <label for="filter-parking">Парковка</label>
               </li>
               <li>
-                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
                 <label for="filter-wi-fi">Wi-fi</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset>
-            <legend>Тип жилья:</legend>
-            <ul>
+          <fieldset class="hotel-filter-checkbox">
+            <legend class="filter-legend">Тип жилья:</legend>
+            <ul class="filter-checkbox">
               <li>
-                <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
                 <label for="filter-hotel">Гостиница</label>
               </li>
               <li>
-                <input type="checkbox" name="motel" id="filter-motel" checked>
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="motel" id="filter-motel" checked>
                 <label for="filter-motel">Мотель</label>
               </li>
               <li>
-                <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="apartments" id="filter-apartments" checked>
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset>
-            <legend>Стоимость в сутки (р):</legend>
-            <ul>
+          <fieldset class="hotel-filter-range">
+            <legend class="filter-legend">Стоимость в сутки (р):</legend>
+            <ul class="filter-range">
               <li>
-                <input type="number" name="min-prise" id="filter-min-prise" value="0">
+                <input class="filter-input-range filter-input" type="number" name="min-prise" id="filter-min-prise" value="0">
                 <label for="filter-min-prise">От</label>
               </li>
               <li>
-                <input type="number" name="max-prise" id="filter-max-prise" value="3000">
+                <input class="filter-input-range filter-input" type="number" name="max-prise" id="filter-max-prise" value="3000">
                 <label for="filter-max-prise">До</label>
               </li>
             </ul>

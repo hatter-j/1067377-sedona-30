@@ -46,9 +46,11 @@
         <p class="features-causes">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="features-list">
           <li class="feature-item feature-item-white">
-            <h3 class="feature-item-white-caption">Настоящий городок</h3>
-            <span>-№1-</span>
-            <p>Седона-не аттракцион для туристов, там течёт своя жизнь</p>
+            <div>
+              <h3 class="feature-item-caption">Настоящий городок</h3>
+              <span>-№1-</span>
+              <p>Седона-не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img src="img/feature_city.jpg" width="800" height="256" alt="Дома в Седоне">
           </li>
           <li>
@@ -69,25 +71,31 @@
             </ul>
           </li>
           <li class="feature-item feature-item-white">
-            <h3 class="feature-item-white-caption">Там есть мост дьявола</h3>
-            <span>-№2-</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div>
+              <h3 class="feature-item-caption">Там есть мост дьявола</h3>
+              <span>-№2-</span>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
             <img src="img/feature_bridge.jpg" width="800" height="256" alt="Мост дьявола">
           </li>
-          <li class="feature-item">
-            <h3 class="feature-item-caption">Небольшая площадь</h3>
-            <span>-№3-</span>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="feature-item">
-            <h3 class="feature-item-caption">Красивая дорога</h3>
-            <span>-№4-</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="feature-item">
-            <h3 class="feature-item-caption">Мало туристов</h3>
-            <span>-№5-</span>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          <li>
+            <ul class="feature-item-container">
+              <li class="feature-item">
+                <h3 class="feature-item-caption">Небольшая площадь</h3>
+                <span>-№3-</span>
+                <p>Все достопримечательности находятся очень близко</p>
+              </li>
+              <li class="feature-item">
+                <h3 class="feature-item-caption">Красивая дорога</h3>
+                <span>-№4-</span>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="feature-item">
+                <h3 class="feature-item-caption">Мало туристов</h3>
+                <span>-№5-</span>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -100,22 +108,22 @@
           <button class="hotel-finder-button" type="button">Поиск гостиницы в Седоне</button>
           <p class="hotel-search-form-item">
             <label for="arrival-date">Дата заезда:</label>
-            <input id="arrival-date" type="text" name="date-of-arrival" placeholder="24 апреля 2017">
+            <input class="hotel-search-form-input" id="arrival-date" type="text" name="date-of-arrival" placeholder="24 апреля 2017">
           </p>
           <p class="hotel-search-form-item">
             <label for="departure-date">Дата выезда:</label>
-            <input id="departure-date" type="text" name="date-of-departure" placeholder="4 июля 2017">
+            <input class="hotel-search-form-input" id="departure-date" type="text" name="date-of-departure" placeholder="4 июля 2017">
           </p>
           <p class="hotel-search-form-item">
             <label for="adults-number">Взрослые:</label>
             <button type="button">-</button>
-            <input id="adults-number" type="number" name="number-of-adults" placeholder="2">
+            <input class="hotel-search-form-input" id="adults-number" type="number" name="number-of-adults" placeholder="2">
             <button type="button">+</button>
           </p>
           <p class="hotel-search-form-item">
             <label for="children-number">Дети:</label>
             <button type="button">-</button>
-            <input id="children-number" type="number" name="number-of-children" placeholder="0">
+            <input class="hotel-search-form-input" id="children-number" type="number" name="number-of-children" placeholder="0">
             <button type="button">+</button>
           </p>
           <button class="hotel-search-button" type="button">Найти</button>
