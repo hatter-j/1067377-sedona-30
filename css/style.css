@@ -2,14 +2,16 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/PTSans.woff2") format("woff2"), url("../fonts/PTSans.woff") format("woff");
+  src: url("../fonts/PTSans.woff2") format("woff2"),
+  url("../fonts/PTSans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
+  url("../fonts/PTSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -78,7 +80,8 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0px 5px 15px rgba(var(--shadow), 0.2), 0px 0px 0px 40px var(--medium-grey);
+  box-shadow: 0px 5px 15px rgba(var(--shadow), 0.2),
+  0px 0px 0px 40px var(--medium-grey);
 }
 
 /*Grid*/
@@ -211,7 +214,8 @@ img {
   line-height: 24px;
 }
 
-.hotel-finder-button, .hotel-search-button {
+.hotel-finder-button,
+.hotel-search-button {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -303,7 +307,8 @@ img {
 
 /*Footer contacts*/
 
-.footer-contacts a, .footer-contacts p {
+.footer-contacts a,
+.footer-contacts p {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -353,12 +358,14 @@ img {
   color: var(--white);
 }
 
-.hotel-filter-checkbox, .hotel-filter-range {
+.hotel-filter-checkbox,
+.hotel-filter-range {
   border: none;
   padding: 0px;
 }
 
-.filter-checkbox, .filter-range {
+.filter-checkbox,
+.filter-range {
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -430,7 +437,10 @@ img {
   text-decoration: none;
 }
 
-.sorting-current a, .sorting-current a:hover, .sorting-current a:focus, .sorting-current a:active {
+.sorting-current a,
+.sorting-current a:hover,
+.sorting-current a:focus,
+.sorting-current a:active {
   color: var(--blue);
   text-decoration: none;
 }
@@ -452,7 +462,10 @@ img {
   color: var(--blue);
 }
 
-.sorting-button-current a, .sorting-button-current a:hover, .sorting-button-current a:focus, .sorting-button-current a:active {
+.sorting-button-current a,
+.sorting-button-current a:hover,
+.sorting-button-current a:focus,
+.sorting-button-current a:active {
   color: var(--blue);
 }
 
