@@ -2,16 +2,14 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/PTSans.woff2") format("woff2"),
-    url("../fonts/PTSans.woff") format("woff");
+  src: url("../fonts/PTSans.woff2") format("woff2"), url("../fonts/PTSans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
-    url("../fonts/PTSans-Bold.woff") format("woff");
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -45,14 +43,6 @@
 
 /*Global*/
 
-.page {
-  min-width: 1200px;
-  margin-left: 40px;
-  margin-right: 40px;
-  background-color: var(--medium-grey);
-  box-shadow: 0px 5px 15px rgba(var(--shadow), 0.2);
-}
-
 .page-body {
   margin: 0;
   padding: 0;
@@ -64,7 +54,6 @@
   text-transform: uppercase;
   text-align: center;
   background-color: var(--white);
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -84,6 +73,14 @@ img {
   display: none;
 }
 
+/*Container*/
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 5px 15px rgba(var(--shadow), 0.2), 0px 0px 0px 40px var(--medium-grey);
+}
+
 /*Grid*/
 
 .page {
@@ -94,22 +91,18 @@ img {
 
 .main-navigation {
   display: grid;
-  width: 1200px;
-  margin: 0 auto;
   line-height: 26px;
   font-weight: 700;
 }
 
 .main-header-logo {
-  grid-column: 1 / -1;
-  grid-row: 1;
+  position: absolute;
+  margin-left: 571px;
 }
 
 .site-navigation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row: 1;
-  grid-column: 1 / -1;
   margin: 0;
   list-style: none;
   padding: 0;
@@ -131,13 +124,6 @@ img {
   color: rgba(var(--shadow), 0.3);
 }
 
-/*Container*/
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 /*Main*/
 
 .main-slogan {
@@ -153,7 +139,7 @@ img {
 
 /*Features*/
 
-.features-list{
+.features-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -179,14 +165,17 @@ img {
 
 .feature-item-white {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 2fr;
   background-color: var(--blue);
   color: var(--white);
 }
 
-.feature-item-picture {
-  grid-column: 1;
-  grid-row: 1;
+.feature-item-reverse {
+  grid-template-columns: 2fr 1fr;
+}
+
+.feature-item-reverse .feature-item-picture {
+  order: -1;
 }
 
 .services-list {
@@ -222,8 +211,7 @@ img {
   line-height: 24px;
 }
 
-.hotel-finder-button,
-.hotel-search-button {
+.hotel-finder-button, .hotel-search-button {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -307,7 +295,7 @@ img {
 
 /*Footer*/
 
-.main-footer .container {
+.main-footer {
   background-color: rgba(var(--shadow-white), 0.9);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -315,8 +303,7 @@ img {
 
 /*Footer contacts*/
 
-.footer-contacts a,
-.footer-contacts p {
+.footer-contacts a, .footer-contacts p {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -366,14 +353,12 @@ img {
   color: var(--white);
 }
 
-.hotel-filter-checkbox,
-.hotel-filter-range {
-border: none;
-padding: 0px;
+.hotel-filter-checkbox, .hotel-filter-range {
+  border: none;
+  padding: 0px;
 }
 
-.filter-checkbox,
-.filter-range {
+.filter-checkbox, .filter-range {
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -445,10 +430,7 @@ padding: 0px;
   text-decoration: none;
 }
 
-.sorting-current a,
-.sorting-current a:hover,
-.sorting-current a:focus,
-.sorting-current a:active {
+.sorting-current a, .sorting-current a:hover, .sorting-current a:focus, .sorting-current a:active {
   color: var(--blue);
   text-decoration: none;
 }
@@ -470,10 +452,7 @@ padding: 0px;
   color: var(--blue);
 }
 
-.sorting-button-current a,
-.sorting-button-current a:hover,
-.sorting-button-current a:focus,
-.sorting-button-current a:active {
+.sorting-button-current a, .sorting-button-current a:hover, .sorting-button-current a:focus, .sorting-button-current a:active {
   color: var(--blue);
 }
 
