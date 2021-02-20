@@ -58,8 +58,6 @@
   text-align: center;
   background-color: var(--medium-grey);
   min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
 
@@ -79,6 +77,8 @@ img {
 /*Container*/
 
 .container {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0px 5px 15px rgba(var(--shadow), 0.2);
@@ -94,19 +94,21 @@ img {
 /*Main navigation*/
 
 .main-navigation {
-  display: grid;
   line-height: 26px;
   font-weight: 700;
 }
 
 .main-header-logo {
+  width: 138px;
+  height: 70px;
   position: absolute;
-  margin-left: 571px;
+  margin-left: -69px; /* width/2 */
 }
 
 .site-navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin: 0;
   list-style: none;
   padding: 0;
@@ -168,14 +170,19 @@ img {
 }
 
 .feature-item-white {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
   background-color: var(--blue);
   color: var(--white);
 }
 
-.feature-item-reverse {
-  grid-template-columns: 2fr 1fr;
+.feature-item-white div {
+  width: 400px;
+  align-self: center;
+}
+
+.feature-item-picture {
+  width: 800px;
+  height: 256px;
 }
 
 .feature-item-reverse .feature-item-picture {
@@ -183,10 +190,15 @@ img {
 }
 
 .services-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.service-item {
+  width: 400px;
 }
 
 .service-item-caption {
@@ -196,11 +208,16 @@ img {
 }
 
 .feature-item-container {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
+
+.feature-item-container .feature-item {
+  width: 400px;
+}
+
 
 /*Hotel search*/
 
@@ -252,6 +269,7 @@ img {
 }
 
 .hotel-search-form-input {
+  width: 346px;
   line-height: 26px;
   background-color: var(--medium-grey);
   padding: 0;
@@ -493,7 +511,7 @@ img {
 
 .hotel-list-item {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 135px 1fr 110px;
 }
 
 .hotel-name {
