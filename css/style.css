@@ -107,11 +107,18 @@ img {
 
 .site-navigation {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   margin: 0;
   list-style: none;
   padding: 0;
+}
+
+.site-navigation li {
+  width: 200px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: auto;
 }
 
 .site-navigation-current a:not([href]) {
@@ -176,7 +183,7 @@ img {
 }
 
 .feature-item-white div {
-  width: 400px;
+  width: 33.33333%;
   align-self: center;
 }
 
@@ -337,12 +344,15 @@ img {
 /*Footer social*/
 
 .footer-social {
+  display: flex;
+  justify-content: center;
   list-style: none;
   padding: 0;
 }
 
 .social-button {
   background-color: var(--blue);
+  margin-right: 6px;
 }
 
 .social-button:hover {
@@ -373,16 +383,24 @@ img {
 /*Catalog*/
 
 .hotel-filter {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   background-color: var(--blue);
   color: var(--white);
 }
 
 .hotel-filter-checkbox,
 .hotel-filter-range {
+  width: 400px;
   border: none;
   padding: 0px;
+}
+
+.hotel-filter-checkbox:first-child {
+  width: 200px;
+}
+
+.hotel-filter-range {
+  margin-left: auto;
 }
 
 .filter-checkbox,
@@ -413,7 +431,6 @@ img {
 }
 
 .show-hotels-button {
-  grid-column: -1 / -2;
   padding: 0px;
   background-color: transparent;
   border: 2px solid var(--white);
@@ -429,16 +446,24 @@ img {
   background-color: var(--white);
 }
 
-.hotel-sorting-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.hotel-found-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .hotel-found {
+  width: 200px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: var(--black);
+}
+
+.hotel-sorting-container {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .hotel-sorting {
@@ -448,10 +473,10 @@ img {
 }
 
 .sorting-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   list-style: none;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .sorting-list a {
@@ -479,8 +504,8 @@ img {
 }
 
 .sorting-buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  width: 200px;
+  margin-left: auto;
   list-style: none;
   padding: 0px;
 }
