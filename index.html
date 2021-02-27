@@ -1,146 +1,157 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Добро пожаловать в город Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/favicon_32.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/favicon_180.png">
-    <link rel="manifest" href="manifest.webmanifest.js">
-  </head>
 
-  <body class="page-body">
+<head>
+  <meta charset="utf-8">
+  <title>Добро пожаловать в город Седона</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon_32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon_180.png">
+  <link rel="manifest" href="manifest.webmanifest.js">
+</head>
 
-    <div class="container">
+<body class="page-body">
 
-      <header class="main-header">
-        <nav class="main-navigation">
-          <a class="main-header-logo">
-            <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
-          </a>
-          <ul class="site-navigation">
-            <li><a href="blank.html">Информация</a></li>
-            <li><a href="blank.html">Фото и видео</a></li>
-            <li><a href="blank.html">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
-          </ul>
-        </nav>
-      </header>
+  <div class="container">
 
-      <main>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <h1 class="visually-hidden">Город Седона</h1>
+    <main>
 
-          <section class="main-slogan">
-            <h2 class="visually-hidden">Добро пожаловать в город Седона</h2>
-            <img class="slogan" src="img/welcome.svg" width="456" height="350" alt="Welcome to the gorgeous Sedona">
-            <p>
-              Седона-небольшой городок в Аризоне,<br>
-              заслуживающий большего!
-            </p>
-          </section>
+      <h1 class="visually-hidden">Город Седона</h1>
 
-          <section class="features">
-            <h2 class="visually-hidden">Преимущества Седоны</h2>
-            <p class="features-causes">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-            <ul class="features-list">
-              <li class="feature-item feature-item-white">
-                <div>
-                  <h3 class="feature-item-caption">
-                    Настоящий<br>
-                    городок
-                  </h3>
-                  <span>-№1-</span>
-                  <p>
-                    Седона-не аттракцион для туристов,<br>
-                    там течёт своя жизнь
-                  </p>
-                </div>
-                <img class="feature-item-picture" src="img/feature_city.jpg" width="800" height="256" alt="Дома в Седоне">
+      <section class="main-slogan">
+        <h2 class="visually-hidden">Добро пожаловать в город Седона</h2>
+        <div class="slogan-container">
+          <img class="slogan" src="img/welcome.svg" width="456" height="350" alt="Welcome to the gorgeous Sedona">
+          <svg width="1200" height="57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z" fill="red" /></svg>
+          <!--fill поменяла на "red" для наглядности, было "#fff"-->
+        </div>
+        <p>
+          Седона-небольшой городок в Аризоне,<br>
+          заслуживающий большего!
+        </p>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <p class="features-causes">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <ul class="features-list">
+          <li class="feature-item feature-item-white">
+            <div>
+              <h3 class="feature-item-caption">
+                Настоящий<br>
+                городок
+              </h3>
+              <span>-№1-</span>
+              <p>
+                Седона-не аттракцион для туристов,<br>
+                там течёт своя жизнь
+              </p>
+            </div>
+            <img class="feature-item-picture" src="img/feature_city.jpg" width="800" height="256" alt="Дома в Седоне">
+          </li>
+          <li>
+            <h3 class="visually-hidden">Услуги</h3>
+            <ul class="services-list">
+              <li class="service-item">
+                <h4 class="service-item-caption">Жильё</h4>
+                <p>
+                  Рекомендуем пожить в настоящем<br>
+                  мотеле, всё как в кино!
+                </p>
+                <svg class="service-item-picture" width="75" height="72" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M45.66 65.03h-16V41.21h16v23.82zm-2.94-20.9H32.59v17.98h10.13V44.13z" fill="#81B3D2" /><path fill-rule="evenodd" clip-rule="evenodd" d="M72.77 39.25l2.08-2.06-9.91-9.87V0H51.13v13.57L37.5 0 .15 37.19l2.08 2.06 7.83-7.8v37.63H6.12V72H70v-2.92h-5.06V31.46l7.83 7.8zM62 69.08H13V28.53L37.5 4.15 62 28.53v40.55zm-7.94-52.59L62 24.4V2.92h-7.94V16.5z" fill="#81B3D2" /><path fill-rule="evenodd" clip-rule="evenodd" d="M37.66 34.8a7.73 7.73 0 0 1-7.75-7.72 7.73 7.73 0 0 1 7.75-7.71 7.73 7.73 0 0 1 7.75 7.71 7.73 7.73 0 0 1-7.75 7.71zm4.97-7.72a4.96 4.96 0 0 0-4.97-4.95 4.96 4.96 0 1 0 4.97 4.95zM17.05 41.21h3v3.92h-3V41.2zm8.94 0h-3v3.92h3V41.2zm-8.94 5.97h3v3.92h-3v-3.92zm8.94 0h-3v3.92h3v-3.92zm23-5.97h3v3.92h-3V41.2zm8.94 0h-3v3.92h3V41.2zM49 47.18h3v3.92h-3v-3.92zm8.94 0h-3v3.92h3v-3.92z" fill="#81B3D2" /></svg>
               </li>
-              <li>
-                <h3 class="visually-hidden">Услуги</h3>
-                <ul class="services-list">
-                  <li class="service-item">
-                    <h4 class="service-item-caption">Жильё</h4>
-                    <p>
-                      Рекомендуем пожить в настоящем<br>
-                      мотеле, всё как в кино!
-                    </p>
-                  </li>
-                  <li class="service-item">
-                    <h4 class="service-item-caption">Еда</h4>
-                    <p>
-                      Всегда заказывайте фирменный бургер,<br>
-                      вы не разочаруетесь!
-                    </p>
-                  </li>
-                  <li class="service-item">
-                    <h4 class="service-item-caption">Сувениры</h4>
-                    <p>
-                      Не только китайского, но и местного<br>
-                      производства!
-                    </p>
-                  </li>
-                </ul>
+              <li class="service-item">
+                <h4 class="service-item-caption">Еда</h4>
+                <p>
+                  Всегда заказывайте фирменный бургер,<br>
+                  вы не разочаруетесь!
+                </p>
+                <svg class="service-item-picture" width="75" height="70" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.98 31.54h60.88c.04-.61.06-1.24.06-1.87l-.03-1.17C69.23 12.66 55.2 0 37.95 0 20.72 0 6.68 12.66 6.01 28.5a26.88 26.88 0 0 0 .04 3.04h2.93zm12.98 10.93l-5.33-4.06-5.32 4.06-6.19-4.72 1.72-2.46 4.47 3.4 5.33-4.05 5.32 4.05 5.32-4.05 5.33 4.05 5.33-4.05 5.33 4.05 5.33-4.05 5.32 4.05 5.33-4.05 5.34 4.06 4.47-3.4 1.72 2.45-6.2 4.71-5.33-4.05-5.33 4.06-5.32-4.06-5.33 4.06-5.33-4.06-5.33 4.06-5.33-4.06-5.32 4.06zM5.06 46.7h65.8a4.24 4.24 0 0 1 4.13 4.31v3.5a4.24 4.24 0 0 1-4.14 4.32h-.93v1.05c0 5.54-4.34 10.07-9.65 10.07H15.63c-5.3 0-9.65-4.53-9.65-10.07v-1.05h-.93a4.24 4.24 0 0 1-4.13-4.31v-3.5a4.24 4.24 0 0 1 4.13-4.32zm55.22 20.2c3.7 0 6.73-3.14 6.73-7.02v-1.05H8.9v1.05c0 3.88 3.02 7.03 6.73 7.03h44.65zm11.8-12.38c0 .69-.57 1.27-1.23 1.27H5.05c-.66 0-1.22-.58-1.22-1.27v-3.5c0-.7.56-1.28 1.22-1.28h65.8c.66 0 1.22.58 1.22 1.27v3.5zm-5.1-26.03C66.3 14.36 53.53 3.04 37.94 3.04 22.36 3.04 9.6 14.36 8.93 28.5h58.04z" fill="#81B3D2" /><path d="M37.95 17.29c1.08 0 1.95-.9 1.95-2.03 0-1.12-.87-2.03-1.95-2.03-1.07 0-1.94.9-1.94 2.03 0 1.12.87 2.03 1.94 2.03zM30.17 12.26c1.08 0 1.95-.9 1.95-2.03 0-1.12-.87-2.03-1.95-2.03-1.07 0-1.94.9-1.94 2.03 0 1.12.87 2.03 1.94 2.03zM45.73 12.26c1.08 0 1.95-.9 1.95-2.03 0-1.12-.87-2.03-1.95-2.03-1.07 0-1.94.9-1.94 2.03 0 1.12.87 2.03 1.94 2.03z" fill="#81B3D2" /></svg>
               </li>
-              <li class="feature-item feature-item-white feature-item-reverse">
-                <div>
-                  <h3 class="feature-item-caption">
-                    Там есть<br>
-                    мост дьявола
-                  </h3>
-                  <span>-№2-</span>
-                  <p>
-                    Да, по нему можно пройти! Если конечно<br>
-                    вы осмелитесь
-                  </p>
-                </div>
-                <img class="feature-item-picture" src="img/feature_bridge.jpg" width="800" height="256" alt="Мост дьявола">
-              </li>
-              <li>
-                <ul class="feature-item-container">
-                  <li class="feature-item">
-                    <h3 class="feature-item-caption">Небольшая площадь</h3>
-                    <span>-№3-</span>
-                    <p>
-                    Все достопримечательности<br>
-                    находятся очень близко
-                    </p>
-                  </li>
-                  <li class="feature-item">
-                    <h3 class="feature-item-caption">Красивая дорога</h3>
-                    <span>-№4-</span>
-                    <p>
-                      Ехать в Седону из Лас-Вегаса совсем<br>
-                      не скучно!
-                    </p>
-                  </li>
-                  <li class="feature-item">
-                    <h3 class="feature-item-caption">Мало туристов</h3>
-                    <span>-№5-</span>
-                    <p>
-                      Большинство едет в Гранд Каньон<br>
-                      и толпится там
-                    </p>
-                  </li>
-                </ul>
+              <li class="service-item">
+                <h4 class="service-item-caption">Сувениры</h4>
+                <p>
+                  Не только китайского, но и местного<br>
+                  производства!
+                </p>
+                <svg class="service-item-picture" width="64" height="77" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M61.1 23.5H36.3c13.81-6.9 14.92-11.25 14.41-13.68-1.16-3.97-5.7-7.03-10-5.41-5.57 2.09-7.14 10.39-8.65 16.39-1.92-6.07-3.78-13.82-8.13-17.74a7.31 7.31 0 0 0-5.77-2.03c-4.02.36-9.8 5.38-7.45 10.98 2.25 5.38 9.68 8.78 14.58 11.5H2.88A2.88 2.88 0 0 0 0 26.36v11.32c0 1.59 1.3 2.87 2.88 2.87h.27V77H61V40.56h.1a2.88 2.88 0 0 0 2.89-2.87V26.37c-.01-1.59-1.3-2.87-2.88-2.87zM42.4 6.94c2.1-.3 4.99 1.3 5.26 3.21.4 2.76-3.4 5.26-5.09 6.42-2.52 1.75-4.93 2.65-7.28 4.06.88-3.7 2.54-13.01 7.11-13.69zm-22.88 9.97c-2.22-1.48-6.54-4.43-6.44-7.77.11-3.6 5.74-6.57 8.82-3.89 3.85 3.38 5.7 11.11 7.11 16.56-3.25-1.54-6.32-2.79-9.49-4.9zm5.97 57.12H6.14V40.56H25.5v33.47zm0-36.5H3.05v-11H25.5v11zm10.16 0v36.5h-7.17v-47.5h7.17v11zm22.35 36.5H38.64V40.56h19.37v33.47zm2.92-36.5H38.64v-11h22.3v11z" fill="#81B3D2" /></svg>
               </li>
             </ul>
-          </section>
+          </li>
+          <li class="feature-item feature-item-white feature-item-reverse">
+            <div>
+              <h3 class="feature-item-caption">
+                Там есть<br>
+                мост дьявола
+              </h3>
+              <span>-№2-</span>
+              <p>
+                Да, по нему можно пройти! Если конечно<br>
+                вы осмелитесь
+              </p>
+            </div>
+            <img class="feature-item-picture" src="img/feature_bridge.jpg" width="800" height="256" alt="Мост дьявола">
+          </li>
+          <li>
+            <ul class="feature-item-container">
+              <li class="feature-item">
+                <h3 class="feature-item-caption">Небольшая площадь</h3>
+                <span>-№3-</span>
+                <p>
+                  Все достопримечательности<br>
+                  находятся очень близко
+                </p>
+              </li>
+              <li class="feature-item">
+                <h3 class="feature-item-caption">Красивая дорога</h3>
+                <span>-№4-</span>
+                <p>
+                  Ехать в Седону из Лас-Вегаса совсем<br>
+                  не скучно!
+                </p>
+              </li>
+              <li class="feature-item">
+                <h3 class="feature-item-caption">Мало туристов</h3>
+                <span>-№5-</span>
+                <p>
+                  Большинство едет в Гранд Каньон<br>
+                  и толпится там
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
-          <section class="hotel-search">
-            <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-            <span>Заинтересовались?</span>
-            <p>
-              Укажите предполагаемые даты поездки,<br>
-              и мы покажем вам лучшие предложения гостиниц в Седоне
-            </p>
-            <form class="hotel-search-form" method="get" action="https://echo.htmlacademy.ru/">
-              <button class="hotel-finder-button" type="button">Поиск гостиницы в Седоне</button>
+      <section class="hotel-search">
+        <h2 class="visually-hidden">Форма поиска гостиницы</h2>
+        <span>Заинтересовались?</span>
+        <p>
+          Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+
+        <form class="hotel-search-form" method="get" action="https://echo.htmlacademy.ru/">
+          <button class="hotel-finder-button" type="button">Поиск гостиницы в Седоне</button>
+          <div class="form-container">
+            <div class="search-form-container">
               <p class="hotel-search-form-item">
                 <label for="arrival-date">Дата заезда:</label>
                 <input class="hotel-search-form-input" id="arrival-date" type="text" name="date-of-arrival" placeholder="24 апреля 2017">
@@ -162,40 +173,55 @@
                 <button type="button">+</button>
               </p>
               <button class="hotel-search-button" type="submit">Найти</button>
-            </form>
-          </section>
+            </div>
+          </div>
+        </form>
+      </section>
 
-      </main>
+    </main>
 
-      <footer class="main-footer">
+    <footer class="main-footer">
 
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Контактные данные</h2>
-          <p><a href="#">#VISITSEDONA</a></p>
-          <p>ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a></p>
-        </section>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контактные данные</h2>
+        <p><a href="#">#VISITSEDONA</a></p>
+        <p>ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a></p>
+      </section>
 
-        <section>
-          <h2 class="visually-hidden">Ссылки на соц. сети</h2>
-          <ul class="footer-social">
-            <li>
-              <a class="social-button" href="#">Твиттер</a>
-            </li>
-            <li>
-              <a class="social-button" href="#">Фейсбук</a>
-            </li>
-            <li>
-              <a class="social-button" href="#">Ютуб</a>
-            </li>
-          </ul>
-        </section>
+      <section>
+        <h2 class="visually-hidden">Ссылки на соц. сети</h2>
+        <ul class="footer-social">
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Твиттер</span>
+              <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.95 1.144c1.685-.496 2.984.27 3.577 1.18.673-.232 1.331-.482 2.011-.709a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.49 1.304-.49-.169 1-1.006 1.787-1.563 2.023-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.12C1.705 9.246.374 8.53.448 6.33c.285.328 1.067.536 1.34.472-.703-.24-1.97-3.36-.894-4.952 1.818 1.854 3.735 3.606 7.152 3.773.208-2.293 1.137-3.83 2.904-4.479z" fill="#fff"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8C6 0 4 2 4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#ffff"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Ютуб</span>
+              <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3zm3.03 4v8L15 8 6.03 4z" fill="#fff"/></svg>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-        <section class="footer-copyright">
-          <p>Website by <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
-        </section>
+      <section class="footer-copyright">
+        <p>Website by
+          <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <svg width="115" height="41" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.52 1.057h-.17L0 2.72v28.776l15.35 9.343 15.352-9.344V2.72L15.52 1.057zm61.498 1.565h-1.93v13.11h1.93V2.621zm-36.156.01v5.136a3.976 3.976 0 0 1 2.849-1.23 3.387 3.387 0 0 1 2.614 1.007 3.55 3.55 0 0 1 1.015 2.662v5.556h-1.973v-5.297a1.984 1.984 0 0 0-.41-1.44 1.899 1.899 0 0 0-1.289-.718h-.316a3.081 3.081 0 0 0-2.448 1.5v5.955H38.9V2.633h1.963zm36.156 28.852h-1.74v-1.425a4.061 4.061 0 0 1-3.366 1.662c-2.437-.168-4.33-2.239-4.33-4.736 0-2.498 1.893-4.569 4.33-4.737a3.98 3.98 0 0 1 3.165 1.402v-5.33h1.941v13.164zm-29.952-1.425c.197-.008.392-.044.58-.107v1.435c-.398.153-.82.23-1.245.226a1.758 1.758 0 0 1-1.762-1.079 5.035 5.035 0 0 1-3.313 1.166c-1.593 0-3.07-.896-3.07-2.752 0-2.298 2.11-3.01 3.914-3.01.77.013 1.537.103 2.29.27v-.324c0-1.079-.802-1.91-2.31-1.91a7.682 7.682 0 0 0-3.166.69V22.83a10.56 10.56 0 0 1 3.365-.593c2.49 0 4.02 1.209 4.02 3.938v3.237a.592.592 0 0 0 .13.429c.096.12.236.194.387.208h.18v.01zM40.27 28.84c.027.389.205.75.495 1.004.289.253.666.378 1.046.345h.116a3.537 3.537 0 0 0 2.542-1.079v-1.532a10.039 10.039 0 0 0-1.91-.227c-1.055 0-2.278.356-2.278 1.49h-.01zm15.752-5.902a5.183 5.183 0 0 0-2.712-.69h-.369a4.514 4.514 0 0 0-3.18 1.471 4.722 4.722 0 0 0-1.23 3.341v.442c.164 2.498 2.273 4.39 4.716 4.23 1.004.024 2-.187 2.912-.615v-1.845a5.185 5.185 0 0 1-2.564.69 2.885 2.885 0 0 1-2.657-1.426 3.024 3.024 0 0 1 0-3.07 2.884 2.884 0 0 1 2.657-1.427c.865-.003 1.71.26 2.427.755v-1.856zM66.15 30.06c.198-.008.393-.045.58-.108v1.435c-.397.153-.82.23-1.244.226a1.758 1.758 0 0 1-1.762-1.079 5.035 5.035 0 0 1-3.313 1.166c-1.593 0-3.07-.896-3.07-2.752 0-2.298 2.11-3.01 3.914-3.01.77.013 1.537.103 2.29.27v-.324c0-1.079-.802-1.91-2.311-1.91a7.682 7.682 0 0 0-3.165.69V22.83c1.084-.379 2.22-.58 3.365-.593 2.49 0 4.02 1.209 4.02 3.938v3.237a.592.592 0 0 0 .129.429c.097.12.237.194.388.208h.18v.01zm-6.296-.212a1.468 1.468 0 0 1-.498-1.008h.021c0-1.133 1.16-1.489 2.279-1.489.642.015 1.281.09 1.91.227v1.532a3.537 3.537 0 0 1-2.543 1.079h-.116a1.404 1.404 0 0 1-1.053-.34zm9.472-2.918c0-1.644 1.304-2.977 2.912-2.977l.021.054c1.214 0 2.314.731 2.806 1.866v2.158a3.015 3.015 0 0 1-2.827 1.877c-1.608 0-2.912-1.333-2.912-2.978zm14.022-4.682c3.492 0 4.705 2.892 4.135 5.492h-6.562c.222 1.618 1.762 2.276 3.366 2.276a6.326 6.326 0 0 0 2.785-.636v1.726c-1 .436-2.08.646-3.165.615-2.67 0-5.012-1.532-5.012-4.769a4.572 4.572 0 0 1 1.145-3.268 4.37 4.37 0 0 1 3.076-1.469h.232v.033zm-2.48 3.927c.101-1.351 1.253-2.365 2.575-2.265h.042c.62-.057 1.234.17 1.675.62.442.449.666 1.075.614 1.71H80.87v-.065zm8.62 5.287v-8.966h1.74v1.079a3.983 3.983 0 0 1 2.934-1.37 3.001 3.001 0 0 1 2.785 1.51c.793-.881 1.9-1.399 3.07-1.435a3.192 3.192 0 0 1 2.489 1.01c.647.69.971 1.631.887 2.583v5.61h-2.004v-5.556a1.74 1.74 0 0 0-.366-1.262 1.665 1.665 0 0 0-1.132-.626h-.275a2.936 2.936 0 0 0-2.184 1.208v6.237H95.43v-5.557a1.742 1.742 0 0 0-.38-1.266 1.666 1.666 0 0 0-1.15-.611h-.21a3.153 3.153 0 0 0-2.333 1.392v6.074h-1.825l-.042-.054zm24.488-8.988h-2.005l-2.648 6.798-3.018-6.787h-2.11l4.221 9.063-.18.454c-.517 1.36-1.234 2.05-2.184 2.05a2.96 2.96 0 0 1-.897-.13v1.694c.38.096.77.147 1.161.151 1.329 0 2.585-.744 3.534-3.086l4.126-10.206zM52.689 6.787V3.55l-1.962.464v2.719h-1.583V8.49h1.646v4.5c-.067.826.234 1.64.82 2.213a2.653 2.653 0 0 0 2.197.743c.793.007 1.58-.121 2.332-.378v-1.726a4.647 4.647 0 0 1-1.783.356c-1.14 0-1.667-.389-1.667-1.575V8.513h3.165V6.787H52.69zm5.697 8.966V6.754h1.752v1.08a3.983 3.983 0 0 1 2.922-1.382 2.998 2.998 0 0 1 2.743 1.435c.793-.882 1.9-1.4 3.07-1.435.94-.037 1.85.347 2.491 1.052.64.704.949 1.66.843 2.617v5.62h-2.004v-5.556a1.743 1.743 0 0 0-.366-1.262 1.668 1.668 0 0 0-1.132-.626h-.243a2.937 2.937 0 0 0-2.184 1.209v6.236h-2.005v-5.557a1.742 1.742 0 0 0-.365-1.262 1.667 1.667 0 0 0-1.133-.626h-.242A3.153 3.153 0 0 0 60.2 9.69v6.074h-1.815v-.01zm-29.689 14.55l.01-.006-.01.021v-.015zm0-11.983v11.983l-13.346 8.13-13.346-8.115V18.515l13.283 8.092v1.424l-9.105-5.503v1.414l9.157 5.621v1.5l-9.147-5.567v1.456l9.158 5.621 9.232-5.653v-6.107l4.114-2.492zm.01-1.542l-3.67 2.158-1.689 1.079-8.04-4.931v1.413l6.848 4.23-.148.097-1.055.582-5.665-3.452v1.445l4.473 2.72-1.055.722-3.376-2.05v1.414l2.215 1.338-2.247 1.36L2.11 16.863 15.31 8.729l13.399 8.049zm-13.42-9.506l13.42 8.081V4.563L15.362 3.13 2.015 4.564v10.79l13.273-8.082z" fill="#231F20"/></svg>
+          </a>
+        </p>
+      </section>
 
-      </footer>
-    </div>
-  </body>
+    </footer>
+  </div>
+</body>
 
 </html>
