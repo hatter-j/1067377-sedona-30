@@ -120,15 +120,14 @@ img {
   flex-wrap: wrap;
   margin: 0;
   list-style: none;
-  padding: 0;
   min-height: 55px;
+  box-sizing: border-box;
+  padding: 15px 64px;
 }
 
 .site-navigation li {
   width: 20%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 72px;
+  margin: 0px 8px;
 }
 
 .site-navigation li:nth-child(1),
@@ -151,7 +150,8 @@ img {
 
 .site-navigation a {
   color: var(--black);
-  display: block;
+  display: inline-block;
+  padding-left: auto;
 }
 
 .site-navigation a:hover {
@@ -385,7 +385,6 @@ img {
   background-size: cover;
   height: 594px;
   margin-top: 86px;
-  margin-bottom: -120px;
 }
 
 .hotel-search-form-item {
@@ -396,8 +395,12 @@ img {
   text-align: left;
 }
 
-.search-form-label .children-number {
-  padding-left: 55px;
+.children-number-label {
+  padding-left: 50px;
+}
+
+.search-form-label:not(.children-number-label) {
+  margin-right: auto;
 }
 
 .form-container p {
@@ -405,10 +408,9 @@ img {
   margin-bottom: 29px;
 }
 
-.hotel-search-form-item label {
+.search-form-label {
   display: block;
   line-height: 26px;
-  margin-right: auto;
   min-width: 65px;
 }
 
@@ -540,7 +542,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   position: absolute;
   width: 100%;
-  top: 100%;
+  bottom: 0%;
 }
 
 /*Footer contacts*/
