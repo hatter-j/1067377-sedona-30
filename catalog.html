@@ -79,10 +79,12 @@
           <fieldset class="hotel-filter-range">
             <legend class="filter-legend range-legend">Стоимость в сутки (р):</legend>
               <div class="price-controls">
-                <label class="visually-hidden" for="filter-min-prise">От</label>
-                <input class="filter-input-range filter-input input-range-border" type="text" name="min-prise" id="filter-min-prise" value="От 0">
-                <label class="visually-hidden" for="filter-max-prise">До</label>
-                <input class="filter-input-range filter-input" type="text" name="max-prise" id="filter-max-prise" value="До 3000">
+                <div class="input-range-border">
+                  <label class="range-label" for="filter-min-prise">От</label>
+                  <input class="filter-input-range filter-input" type="number" name="min-prise" id="filter-min-prise" value="0">
+                </div>
+                <label class="range-label label-max-price" for="filter-max-prise">До</label>
+                <input class="filter-input-range filter-input" type="number" name="max-prise" id="filter-max-prise" value="3000">
               </div>
               <div class="range-filter">
                 <div class="range-controls">
