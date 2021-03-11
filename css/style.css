@@ -731,9 +731,13 @@ input[type="number"] {
   display: none;
 }
 
-/*.filter-input-checkbox[disabled] {
+.filter-input-checkbox[disabled] ~ .checkbox-on path {
   fill: var(--special-brown);
-}*/
+}
+
+.filter-input-checkbox[disabled] ~ .checkbox-off path {
+  fill: var(--special-brown);
+}
 
 .price-controls {
   display: flex;
