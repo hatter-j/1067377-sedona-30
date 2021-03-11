@@ -50,7 +50,7 @@
 .page-body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -170,7 +170,7 @@ img {
   line-height: 26px;
   font-weight: 700;
   color: var(--black);
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .slogan {
@@ -187,8 +187,8 @@ img {
 
 .main-slogan p {
   padding-bottom: 28px;
-  margin-top: 42px ;
-  margin-bottom: 16px;
+  margin-top: 43px ;
+  margin-bottom: 10px;
 }
 
 /*Features*/
@@ -202,7 +202,7 @@ img {
 .features-causes {
   line-height: 26px;
   margin-top: 0;
-  margin-bottom: 51px;
+  margin-bottom: 52px;
 }
 
 .feature-item span {
@@ -225,7 +225,7 @@ img {
   font-size: 21px;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .feature-item-white {
@@ -239,7 +239,7 @@ img {
   width: 33.33333%;
   align-self: center;
   padding-top: 47px;
-  padding-bottom: 54px;
+  padding-bottom: 51px;
 }
 
 .feature-item-container .feature-item {
@@ -322,7 +322,7 @@ img {
   line-height: 24px;
   font-weight: 700;
   color: var(--black);
-  margin-top: 58px;
+  margin-top: 56px;
   margin-bottom: 4px;
 }
 
@@ -408,7 +408,7 @@ img {
 
 .form-container p {
   padding: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .search-form-label {
@@ -451,7 +451,7 @@ img {
 .search-item-container .hotel-search-form-input {
   padding-left: 0px;
   text-align: center;
-  width: 40px;
+  width: 39px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -483,7 +483,7 @@ input[type="number"] {
 .hotel-search-button {
   background-color: var(--blue);
   padding: 16px 182px;
-  margin-top: 25px;
+  margin-top: 24px;
   width: 100%;
 }
 
@@ -555,8 +555,12 @@ input[type="number"] {
 
 .main-footer {
   background-color: rgba(var(--shadow-white), 0.9);
+}
+
+.footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 26px 77px;
 }
 
 .index-footer {
@@ -576,12 +580,13 @@ input[type="number"] {
   margin: 0;
 }
 
-.footer-contacts p {
-  padding-bottom: 9px;
+.footer-contacts {
+  width: 320px;
+  text-align: center;
 }
 
-.footer-contacts {
-  padding: 23px 10px 3px 85px;
+.footer-contacts p {
+  margin-bottom: 9px;
 }
 
 /*Footer social*/
@@ -590,18 +595,15 @@ input[type="number"] {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   list-style: none;
-  padding-top: 33px;
-  padding-bottom: 33px;
-  padding-left: 0px;
   margin: 0px;
+  padding: 8px 0px;
+  width: 400px;
 }
 
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .social-button {
@@ -630,23 +632,23 @@ input[type="number"] {
 .footer-copyright {
   line-height: 26px;
   color: var(--black);
-  padding-top: 38px;
-  padding-bottom: 41px;
+  width: 320px;
+  padding: 14px 0px;
 }
 
 .footer-copyright p {
   margin: 0px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  padding-left: 65px;
 }
 
 .footer-copyright-link {
   display: block;
   color: var(--special-black);
-  padding-left: 8px;
-  width: 115px;
+  margin-left: 9px;
+  width: 110px;
   height: 41px;
 }
 
@@ -676,7 +678,11 @@ input[type="number"] {
   background-image: url("../img/background_form.jpg");
   color: var(--white);
   box-sizing: border-box;
-  padding: 26px 72px 7px 72px;
+  padding: 26px 71px 7px 71px;
+}
+
+.filter-legend {
+  margin-bottom: 25px;
 }
 
 .hotel-filter-checkbox,
@@ -692,31 +698,42 @@ input[type="number"] {
 }
 
 .filter-checkbox li {
-  margin: 25px 0px;
+  display: flex;
+  margin: 0px 0px 17px;
 }
 
 .filter-checkbox label {
-  position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-left: 38px;
+  padding-left: 15px;
 }
 
-.filter-input-checkbox + label::before {
-  content: "";
-  position: absolute;
-  left: 0px;
+.checkbox-off div {
   width: 23px;
   height: 23px;
-  background-image: url("../img/icons/icon_checkbox_off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.filter-input-checkbox:checked + label::before {
-  background-image: url("../img/icons/icon_checkbox_on.svg");
+.checkbox-on div {
+  width: 27px;
+  height: 23px;
 }
+
+.checkbox-on {
+  display: none;
+}
+
+.filter-input-checkbox[checked] ~ .checkbox-on {
+  display: block;
+}
+
+.filter-input-checkbox[checked] ~ .checkbox-off {
+  display: none;
+}
+
+/*.filter-input-checkbox[disabled] {
+  fill: var(--special-brown);
+}*/
 
 .price-controls {
   display: flex;
@@ -741,6 +758,7 @@ input[type="number"] {
 .range-legend {
   text-align: left;
   padding-left: 97px;
+  margin-bottom: 0px;
 }
 
 .filter-input-range {
@@ -823,10 +841,6 @@ input[type="number"] {
   padding: 0px;
   margin: 0px;
   list-style: none;
-}
-
-.filter-input-checkbox[disabled] path {
-  fill: var(--special-brown);
 }
 
 .filter-legend {
