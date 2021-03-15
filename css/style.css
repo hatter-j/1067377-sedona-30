@@ -545,8 +545,8 @@ input[type="number"] {
   fill: var(--black);
 }
 
-.button-minus:active path,
-.button-plus:active rect {
+.button-minus:active rect,
+.button-plus:active path {
   fill: var(--blue);
 }
 
@@ -869,7 +869,8 @@ margin-left: 5px;
   margin-top: 23px;
 }
 
-.show-hotels-button:hover {
+.show-hotels-button:hover,
+.show-hotels-button:focus {
   color: var(--black);
   background-color: var(--white);
 }
