@@ -720,11 +720,11 @@ input[type="number"] {
 }
 
 .filter-input-checkbox:focus ~ .checkbox-on {
-  border: 2px solid var(--black);
+  outline: 2px solid var(--black);
 }
 
 .filter-input-checkbox:focus ~ .checkbox-off {
-  border: 2px solid var(--black);
+  outline: 2px solid var(--black);
 }
 
 .filter-input-checkbox:checked ~ .checkbox-on {
