@@ -354,7 +354,8 @@ img {
   width: 100%;
 }
 
-.hotel-finder-button:hover {
+.hotel-finder-button:hover,
+.hotel-finder-button:focus {
   background-color: var(--medium-brown);
 }
 
@@ -487,7 +488,8 @@ input[type="number"] {
   width: 100%;
 }
 
-.hotel-search-button:hover {
+.hotel-search-button:hover,
+.hotel-search-button:focus {
   background-color: var(--medium-blue);
 }
 
@@ -504,7 +506,8 @@ input[type="number"] {
   width: 30px;
 }
 
-.calendar-button:hover path {
+.calendar-button:hover path,
+.calendar-button:focus path {
   fill: var(--black);
 }
 
@@ -535,18 +538,14 @@ input[type="number"] {
   display: block;
 }
 
-.button-plus:hover path {
+.button-minus:hover rect,
+.button-plus:hover path,
+.button-minus:focus rect,
+.button-plus:focus path {
   fill: var(--black);
 }
 
-.button-minus:hover rect {
-  fill: var(--black);
-}
-
-.button-minus:active path {
-  fill: var(--blue);
-}
-
+.button-minus:active path,
 .button-plus:active rect {
   fill: var(--blue);
 }
@@ -678,7 +677,7 @@ input[type="number"] {
   background-image: url("../img/background_form.jpg");
   color: var(--white);
   box-sizing: border-box;
-  padding: 26px 71px 7px 71px;
+  padding: 26px 71px 10px 71px;
 }
 
 .filter-legend {
@@ -698,65 +697,75 @@ input[type="number"] {
 }
 
 .filter-checkbox li {
-  display: flex;
-  margin: 0px 0px 17px;
+  margin: 0px 0px 22px;
 }
 
 .filter-checkbox label {
-  display: block;
+  display: flex;
   cursor: pointer;
   user-select: none;
-  padding-left: 15px;
 }
 
-.checkbox-off div {
+.checkbox-off {
   width: 23px;
   height: 23px;
-}
-
-.checkbox-on div {
-  width: 27px;
-  height: 23px;
+  margin-right: 14px;
 }
 
 .checkbox-on {
+  width: 27px;
+  height: 23px;
+  margin-right: 12px;
   display: none;
 }
 
-.filter-input-checkbox[checked] ~ .checkbox-on {
+.filter-input-checkbox:checked ~ .checkbox-on {
   display: block;
 }
 
-.filter-input-checkbox[checked] ~ .checkbox-off {
+.filter-input-checkbox:checked ~ .checkbox-off {
   display: none;
 }
 
-.filter-input-checkbox[disabled] ~ .checkbox-on path {
-  fill: var(--special-brown);
+.filter-input-checkbox:disabled ~ .checkbox-on {
+  color: var(--special-brown);
 }
 
-.filter-input-checkbox[disabled] ~ .checkbox-off path {
-  fill: var(--special-brown);
+.filter-input-checkbox:disabled ~ .checkbox-off {
+  color: var(--special-brown);
 }
 
 .price-controls {
   display: flex;
-  flex-wrap: wrap;
   margin-left: 95px;
   margin-top: 10px;
   border: 2px solid var(--white);
+  padding: 5px 0px 8px;
   position: relative;
+}
+
+.price-controls div {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.range-label {
+  margin-right: 5px;
+}
+
+.input-range-border {
+margin-left: 5px;
 }
 
 .input-range-border::before {
   content: "";
   position: absolute;
   width: 2px;
-  height: calc(100% - 11px);
-  top: 15%;
+  height: calc(100% - 12px);
   left: 50%;
   background-color: var(--white);
-  transform: translate(-50% -50%);
+  transform: translate (-50%);
 }
 
 .range-legend {
@@ -768,22 +777,10 @@ input[type="number"] {
 .filter-input-range {
   font: inherit;
   text-transform: uppercase;
-  width: 156px;
-  height: 34px;
+  width: 75px;
   box-sizing: border-box;
-  text-align: center;
-  padding-left: 30px;
-  position: relative;
-}
-
-.range-label {
-  position: absolute;
-  top: 7px;
-  left: 65px;
-}
-
-.label-max-price {
-  left: 210px;
+  text-align: left;
+  padding: 0px;
 }
 
 .hotel-filter-range {
@@ -850,10 +847,6 @@ input[type="number"] {
 .filter-legend {
   font-size: 16px;
   font-weight: 700;
-}
-
-.hotel-filter label {
-  display: block;
 }
 
 .filter-input {
