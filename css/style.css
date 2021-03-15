@@ -715,8 +715,16 @@ input[type="number"] {
 .checkbox-on {
   width: 27px;
   height: 23px;
-  margin-right: 12px;
+  margin-right: 10px;
   display: none;
+}
+
+.filter-input-checkbox:focus ~ .checkbox-on {
+  border: 2px solid var(--black);
+}
+
+.filter-input-checkbox:focus ~ .checkbox-off {
+  border: 2px solid var(--black);
 }
 
 .filter-input-checkbox:checked ~ .checkbox-on {
