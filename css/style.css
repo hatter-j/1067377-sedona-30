@@ -379,12 +379,32 @@ img {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: var(--white);
 }
 
 .form-container {
+  background-color: var(--white);
   padding: 55px;
   box-shadow: 0px 7px 15px rgba(var(--shadow), 0.15);
+}
+
+.form-container-show {
+  animation: bounce 0.5s;
+}
+
+.form-container-hidden {
+  display: none;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .map {
