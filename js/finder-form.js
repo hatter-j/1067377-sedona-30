@@ -7,37 +7,68 @@ const adultsNumber = searchForm.querySelector("[name=number-of-adults]");
 const childrenNumber = searchForm.querySelector("[name=number-of-children]");
 
 let isStorageSupport = true;
-let storage = "";
+let storageAdults = "";
+let storageChildren = "";
 
 try {
-  storage = localStorage.getItem("adultsNumber");
-  storage = localStorage.getItem("childrenNumber");
+  storageAdults = localStorage.getItem("adultsNumber");
 } catch (err) {
   isStorageSupport = false;
 };
 
-finderButton.addEventListener("click", function (evt) {
-  formContainer.classList.toggle("form-container-hidden");
-  formContainer.classList.toggle("form-container-show");
+try {
+  storageChildren = localStorage.getItem("childrenNumber");
+} catch (err) {
+  isStorageSupport = false;
+};
 
-  if (storage) {
-    adultsNumber.value = storage;
-    childrenNumber.value = storage;
-  }
+if (isStorageSupport) {
+  adultsNumber.value = storageAdults;
+  childrenNumber.value = storageChildren;
+};
+
+if (storageAdults) {
+  adultsNumber.value = storageAdults;
+};
+
+if (storageChildren) {
+  childrenNumber.value = storageChildren;
+};
+
+finderButton.addEventListener("click", function (evt) {
+  formContainer.classList.toggle("form-container-show");
 });
 
 searchForm.addEventListener("submit", function (evt) {
   if (!arrivalDate.value || !departureDate.value) {
     evt.preventDefault();
+    formContainer.classList.remove("form-container-error");
+    formContainer.offsetWidth = formContainer.offsetWidth;
+    formContainer.classList.add("form-container-error");
 }
+});
+
+searchForm.addEventListener("submit", function (evt) {
   if (!adultsNumber.value) {
     evt.preventDefault();
-}
-  if (!childrenNumber.value) {
-    evt.preventDefault();
+    formContainer.classList.remove("form-container-error");
+    formContainer.offsetWidth = formContainer.offsetWidth;
+    formContainer.classList.add("form-container-error");
 } else {
   if (isStorageSupport) {
     localStorage.setItem("adultsNumber", adultsNumber.value);
+  }
+}
+});
+
+searchForm.addEventListener("submit", function (evt) {
+  if (!childrenNumber.value) {
+    evt.preventDefault();
+    formContainer.classList.remove("form-container-error");
+    formContainer.offsetWidth = formContainer.offsetWidth;
+    formContainer.classList.add("form-container-error");
+} else {
+  if (isStorageSupport) {
     localStorage.setItem("childrenNumber", childrenNumber.value);
   }
 }

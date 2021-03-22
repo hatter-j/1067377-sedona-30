@@ -356,6 +356,8 @@ img {
 .hotel-finder-button {
   padding: 30px 125px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .hotel-finder-button:hover,
@@ -379,31 +381,46 @@ img {
   top: 100%;
   left: 0;
   width: 100%;
+  overflow: hidden;
 }
 
 .form-container {
   background-color: var(--white);
   padding: 55px;
   box-shadow: 0px 7px 15px rgba(var(--shadow), 0.15);
+  transform: translateY(-100%);
+  transition: 0.5s transform;
 }
 
 .form-container-show {
-  animation: bounce 0.5s;
+  transform: translateY(0%);
 }
 
-.form-container-hidden {
-  display: none;
+.form-container-error {
+  animation: shake 0.5s;
 }
 
 /* Animations */
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-20px);
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
   }
 
-  100% {
-    transform: translateY(0px);
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
   }
 }
 
