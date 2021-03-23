@@ -426,6 +426,8 @@ img {
 
 .map {
   background-color: var(--blue);
+  background-image: url("../img/map.jpg");
+  background-size: cover;
   height: 594px;
   margin-top: 86px;
 }
