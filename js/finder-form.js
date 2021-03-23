@@ -26,6 +26,8 @@ if (isStorageSupport) {
   };
 };
 
+formContainer.classList.remove("form-container-show");
+
 finderButton.addEventListener("click", function (evt) {
   formContainer.classList.toggle("form-container-show");
 });
@@ -41,5 +43,5 @@ searchForm.addEventListener("submit", function (evt) {
       localStorage.setItem("adultsNumber", adultsNumber.value);
       localStorage.setItem("childrenNumber", childrenNumber.value);
     }
-    }
+  }
 });
